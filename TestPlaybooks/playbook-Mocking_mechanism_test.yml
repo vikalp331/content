@@ -1,0 +1,100 @@
+id: fe69db94-e7c1-429b-84c0-786249b2649d
+version: 4
+name: Mocking mechanism test
+starttaskid: "0"
+tasks:
+  "0":
+    id: "0"
+    taskid: b52d677e-55c3-45a3-82fa-7e669e7eea43
+    type: start
+    task:
+      id: b52d677e-55c3-45a3-82fa-7e669e7eea43
+      version: -1
+      name: ""
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "2"
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 50,
+          "y": 50
+        }
+      }
+    note: false
+    timertriggers: []
+  "1":
+    id: "1"
+    taskid: aa78e119-de38-4342-8d88-ae0398306ca3
+    type: regular
+    task:
+      id: aa78e119-de38-4342-8d88-ae0398306ca3
+      version: -1
+      name: IPInfo IP request for 8.8.8.8
+      script: ipinfo|||ip
+      type: regular
+      iscommand: true
+      brand: ipinfo
+    scriptarguments:
+      ip:
+        simple: 8.8.8.8
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 50,
+          "y": 370
+        }
+      }
+    note: false
+    timertriggers: []
+  "2":
+    id: "2"
+    taskid: 8ecbaa23-f48b-4fc9-8209-6b2cb90b8df6
+    type: regular
+    task:
+      id: 8ecbaa23-f48b-4fc9-8209-6b2cb90b8df6
+      version: -1
+      name: DeleteContext
+      description: Delete field from context
+      scriptName: DeleteContext
+      type: regular
+      iscommand: false
+      brand: ""
+    nexttasks:
+      '#none#':
+      - "1"
+    scriptarguments:
+      all:
+        simple: "yes"
+      index: {}
+      key: {}
+      keysToKeep: {}
+      subplaybook: {}
+    separatecontext: false
+    view: |-
+      {
+        "position": {
+          "x": 50,
+          "y": 195
+        }
+      }
+    note: false
+    timertriggers: []
+view: |-
+  {
+    "linkLabelsPosition": {},
+    "paper": {
+      "dimensions": {
+        "height": 415,
+        "width": 380,
+        "x": 50,
+        "y": 50
+      }
+    }
+  }
+inputs: []
+outputs: []
