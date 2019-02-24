@@ -1145,6 +1145,7 @@
         "GoogleSafeBrowsing": "Pending merge of branch proxy-unsecure-checks",
         "BigFix": "Pending merge of branch proxy-unsecure-checks",
         "Cisco Umbrella Investigate": "Pending merge of branch proxy-unsecure-checks",
+        "ipinfo": "Pending merge of branch proxy-unsecure-checks",
         "InfoArmor VigilanteATI": "Pending merge of branch proxy-unsecure-checks",
         "Rapid7 Nexpose": "Pending merge of branch proxy-unsecure-checks",
         "urlscan.io": "Pending merge of branch proxy-unsecure-checks",
