@@ -3,7 +3,6 @@ import signal
 import string
 import unicodedata
 from subprocess import call, Popen, PIPE, check_call, check_output
-from time import sleep
 
 VALID_FILENAME_CHARS = '-_.() %s%s' % (string.ascii_letters, string.digits)
 
@@ -263,7 +262,6 @@ class MITMProxy:
 
         self.process = Popen(self.ami.add_ssh_prefix(command, "-t"), stdout=PIPE, stderr=PIPE)
         self.__configure_proxy_in_demisto(self.ami.docker_ip + ':' + self.PROXY_PORT)
-        sleep(60)
 
     def stop(self):
         if not self.process:

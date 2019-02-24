@@ -231,7 +231,7 @@ def test_integration(client, integrations, playbook_id, options={}):
 
         instance_ids.append(instance_id)
         print('Create integration %s succeed' % (integration_name, ))
-
+    time.sleep(300)
     # create incident with playbook
     incident, inc_id = __create_incident_with_playbook(client, 'inc_%s' % (playbook_id, ), playbook_id)
 
