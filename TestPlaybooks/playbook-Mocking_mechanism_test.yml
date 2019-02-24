@@ -33,14 +33,26 @@ tasks:
     task:
       id: aa78e119-de38-4342-8d88-ae0398306ca3
       version: -1
-      name: IPInfo IP request for 8.8.8.8
-      script: ipinfo|||ip
+      name: Phishme URL request for google
+      script: Phishme Intelligence|||url
       type: regular
       iscommand: true
-      brand: ipinfo
+      brand: Phishme Intelligence
     scriptarguments:
-      ip:
-        simple: 8.8.8.8
+      confidenceThreshold: {}
+      limit: {}
+      long: {}
+      owners: {}
+      public: {}
+      ratingThreshold: {}
+      retries: {}
+      sampleSize: {}
+      submitWait: {}
+      threshold: {}
+      timeout: {}
+      url:
+        simple: www.google.com
+      wait: {}
     separatecontext: false
     view: |-
       {

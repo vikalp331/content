@@ -3,7 +3,7 @@
     "testInterval": 20,
     "tests": [
         {
-            "integrations": "ipinfo",
+            "integrations": "Phishme Intelligence",
             "playbookID": "Mocking mechanism test"
         },
         {
