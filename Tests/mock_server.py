@@ -263,7 +263,7 @@ class MITMProxy:
 
         self.process = Popen(self.ami.add_ssh_prefix(command, "-t"), stdout=PIPE, stderr=PIPE)
         self.__configure_proxy_in_demisto(self.ami.docker_ip + ':' + self.PROXY_PORT)
-        sleep(1)
+        sleep(60)
 
     def stop(self):
         if not self.process:
