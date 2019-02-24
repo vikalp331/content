@@ -33,26 +33,14 @@ tasks:
     task:
       id: aa78e119-de38-4342-8d88-ae0398306ca3
       version: -1
-      name: Phishme URL request for google
-      script: Phishme Intelligence|||url
+      name: Tenable.io list scans
+      script: Tenable.io|||tenable-io-list-scans
       type: regular
       iscommand: true
-      brand: Phishme Intelligence
+      brand: Tenable.io
     scriptarguments:
-      confidenceThreshold: {}
-      limit: {}
-      long: {}
-      owners: {}
-      public: {}
-      ratingThreshold: {}
-      retries: {}
-      sampleSize: {}
-      submitWait: {}
-      threshold: {}
-      timeout: {}
-      url:
-        simple: www.google.com
-      wait: {}
+      folderId: {}
+      lastModificationDate: {}
     separatecontext: false
     view: |-
       {
