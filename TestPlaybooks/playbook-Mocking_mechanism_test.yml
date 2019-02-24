@@ -39,7 +39,7 @@ tasks:
       iscommand: true
       brand: Tenable.io
     scriptarguments:
-      folderId: {}
+      folderId: "16"
       lastModificationDate: {}
     separatecontext: false
     view: |-
