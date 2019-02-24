@@ -3,6 +3,10 @@
     "testInterval": 20,
     "tests": [
         {
+            "integrations": "ipinfo",
+            "playbookID": "Mocking Mechanism Test"
+        },
+        {
             "playbookID": "RegPathReputationBasicLists_test"
         },
         {
@@ -1135,7 +1139,6 @@
         "Cisco Meraki": "Pending merge of branch proxy-unsecure-checks",
         "epo": "Pending merge of branch proxy-unsecure-checks",
         "FalconIntel": "Pending merge of branch proxy-unsecure-checks",
-        "ipinfo": "Pending merge of branch proxy-unsecure-checks",
         "RSA NetWitness Packets": "Pending merge of branch proxy-unsecure-checks",
         "SNDBOX": "Pending merge of branch proxy-unsecure-checks",
         "BitDam": "Pending merge of branch proxy-unsecure-checks",
