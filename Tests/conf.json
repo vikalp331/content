@@ -1157,7 +1157,6 @@
         "QRadar": "Insecure and proxy have a non empty default value, will require fixing and merging",
         "Cybereason": "Insecure has a non empty default value, will require fixing and merging",
         "Cuckoo Sandbox": "Proxy has a non empty default value, will require fixing and merging",
-        "Phishme Intelligence": "Proxy has a non empty default value, will require fixing and merging",
         "HashiCorp Vault": "Test fails with mock - need to test without mock",
         "google": "'unsecure' parameter not working",
         "Check Point Sandblast": "Test fails with mock - need to test without mock",
