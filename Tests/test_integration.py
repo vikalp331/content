@@ -221,6 +221,7 @@ def test_integration(client, integrations, playbook_id, options={}):
     for integration in integrations:
         integration_name = integration.get('name', None)
         integration_params = integration.get('params', None)
+        print str(integration_params)
         is_byoi = integration.get('byoi', True)
 
         instance_id = __create_integration_instance(client, integration_name, integration_params, is_byoi)
